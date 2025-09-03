@@ -28,16 +28,16 @@ const simbolos = '!@#%*?';
 function geraSenha(){
     let alfabeto = '';
     if (checkbox[0].checked){
-alfabeto = alfabeto + letrasMaiusculas
+alfabeto = alfabeto + letrasMaiusculas;
     }
      if (checkbox[1].checked){
-alfabeto = alfabeto + letrasMinusculas
+alfabeto = alfabeto + letrasMinusculas;
     }
      if (checkbox[2].checked){
-alfabeto = alfabeto + numeros
+alfabeto = alfabeto + numeros;
     }
      if (checkbox[3].checked){
-alfabeto = alfabeto + simbolos
+alfabeto = alfabeto + simbolos;
     }
     let senha = '';
     for (let i = 0; 1 < tamanhoSenha; i++ ){
@@ -52,6 +52,6 @@ function classificaSenha(tamanhoAlfabeto){
     let entropia = tamanhoSenha * Math.LOG2E(tamanhoAlfabeto);
     forcaSenha.classList.remove('fraca', 'media', 'forte');
     if (entropia > 57){
-        
+
     }
 }
